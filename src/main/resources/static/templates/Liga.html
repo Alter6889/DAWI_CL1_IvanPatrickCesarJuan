@@ -14,16 +14,19 @@
 <div class="card-body">
     <form th:action="@{/liga}" method="post" th:object="${ligaModel}">
         <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="txtwin" th:field="*{pganados}">
-        <label for="txtwin"> Partidos Ganados: </label>
+            <label for="txtwin"> Partidos Ganados: </label>
+            <input type="text" class="form-control" id="txtwin" th:field="*{pganados}">
+
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="txtdraw" th:field="*{pempatados}">
             <label for="txtdraw"> Partidos Empatados: </label>
+            <input type="text" class="form-control" id="txtdraw" th:field="*{pempatados}">
+
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="txtlost" th:field="*{pperdidos}">
             <label for="txtlost"> Partidos Perdidos: </label>
+            <input type="text" class="form-control" id="txtlost" th:field="*{pperdidos}">
+
         </div>
         <hr />
             <button type="submit" class="btn btn-primary">CALCULAR</button>
